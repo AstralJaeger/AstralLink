@@ -30,8 +30,8 @@ export enum BadgeState {
 export const getModel = (): Model => {
   return {
     badge: {
-      image: "./src/assets/phoenix.svg",
-      qrCodeImage: "./src/assets/qrcode.svg",
+      image: "/phoenix.svg",
+      qrCodeImage: "/qrcode.svg",
     },
     bio: {
       name: "Felix Hillebrand",
