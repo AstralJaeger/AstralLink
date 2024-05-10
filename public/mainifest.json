@@ -1,0 +1,10 @@
+{
+  "name": "AstralJaeger.dev",
+  "icons": [
+    {
+      "src": "phoenix.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
