@@ -13,6 +13,13 @@ export interface Bio {
   name: string;
   tag: string;
   bio: string;
+  languages: ToolBadge[];
+  tools: ToolBadge[];
+}
+
+export interface ToolBadge {
+  icon: string;
+  url: string;
 }
 
 export interface Social {
@@ -36,7 +43,75 @@ export const getModel = (): Model => {
     bio: {
       name: "Felix Hillebrand",
       tag: "@AstralJaeger",
-      bio: "DevOps specialist and software developer by passion.",
+      bio: "DevOps specialist and chaotic evil software developer by passion",
+      languages: [
+        {
+          icon: "rust",
+          url: "https://www.rust-lang.org/",
+        },
+        {
+          icon: "go",
+          url: "https://go.dev/",
+        },
+        {
+          icon: "java",
+          url: "https://dev.java/",
+        },
+        {
+          icon: "ts",
+          url: "https://www.typescriptlang.org/",
+        },
+        {
+          icon: "nodejs",
+          url: "https://nodejs.org/en",
+        },
+        {
+          icon: "python",
+          url: "https://www.python.org/",
+        },
+      ],
+      tools: [
+        {
+          icon: "docker",
+          url: "https://www.docker.com/",
+        },
+        {
+          icon: "kubernetes",
+          url: "https://kubernetes.io/",
+        },
+        {
+          icon: "openshift",
+          url: "https://www.redhat.com/de/technologies/cloud-computing/openshift",
+        },
+        {
+          icon: "prometheus",
+          url: "https://prometheus.io/",
+        },
+        {
+          icon: "rabbitmq",
+          url: "https://www.rabbitmq.com/",
+        },
+        {
+          icon: "bash",
+          url: "https://www.gnu.org/software/bash/",
+        },
+        {
+          icon: "powershell",
+          url: "https://learn.microsoft.com/en-us/powershell/",
+        },
+        {
+          icon: "aws",
+          url: "https://aws.amazon.com/",
+        },
+        {
+          icon: "azure",
+          url: "https://azure.microsoft.com/de-de",
+        },
+        {
+          icon: "firebase",
+          url: "https://firebase.google.com/",
+        },
+      ],
     },
     socials: [
       {

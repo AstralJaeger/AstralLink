@@ -29,11 +29,15 @@ const Portrait: React.FC<PortraitProps> = ({ badge }) => {
       className="gradient-bordered flex w-full items-center justify-center"
     >
       {state === BadgeState.PICTURE ? (
-        <img
-          className="m-2 h-64 w-64 content-center rounded-full p-2"
-          src={badge.image}
-          alt=""
-        />
+        <div className="flex flex-col items-center justify-center rounded-full bg-gradient-to-tl from-gray-700 to-orange-500">
+          <div className="m-0.5 rounded-full bg-gray-700">
+            <img
+              className="m-2 h-64 w-64 content-center rounded-full p-2"
+              src={badge.image}
+              alt=""
+            />
+          </div>
+        </div>
       ) : isLoading ? (
         <div className="m-2 h-64 w-64 content-center p-2">Loading...</div>
       ) : (
