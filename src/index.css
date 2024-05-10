@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  @apply h-full
+}
+
+body {
+  @apply bg-no-repeat bg-gradient-to-br from-gray-700 to-orange-500;
+  width: 800px;
+  max-width: calc(100% - 2rem);
+  margin-inline: auto;
+}
+
+#root {
+  min-height: 100vh;
+  @apply flex flex-col;
+}

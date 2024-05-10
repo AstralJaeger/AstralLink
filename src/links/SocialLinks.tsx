@@ -1,20 +1,18 @@
 import SocialLink from "./SocialLink.tsx";
-import {Social} from "../model.ts";
+import { Social } from "../model.ts";
 
 type SocialLinksProps = {
   socials: Social[];
 };
 
-const SocialLinks: React.FC<SocialLinksProps> = ({socials}) => {
+const SocialLinks: React.FC<SocialLinksProps> = ({ socials }) => {
   return (
-    <>
-      {
-        socials.map( (social) => (
-          <SocialLink social={social} />
-        ))
-      }
-    </>
-  )
-}
+    <div className="flex flex-col items-center justify-center">
+      {socials.map((social) => (
+        <SocialLink key={social.key} social={social} />
+      ))}
+    </div>
+  );
+};
 
 export default SocialLinks;
