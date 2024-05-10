@@ -16,11 +16,11 @@ const Badge: React.FC<BadgeProps> = ({ badge, bio }) => {
       <h1 className="m-2 ml-8 mr-8 flex-1 text-center text-3xl font-bold">
         {bio.name}
       </h1>
-      <div className="ml-8 mr-8 flex-1">
+      <div className="ml-8 mr-8 flex-1 text-center">
         <FontAwesomeIcon icon={faIdBadge} size="lg" className="" />
         <h2 className="m-2 inline text-2xl">{bio.tag}</h2>
       </div>
-      <p className="text-1xl m-2 ml-8 mr-8  flex-1">{bio.bio}</p>
+      <p className="text-1xl m-2 ml-8 mr-8 flex-1 text-center">{bio.bio}</p>
     </header>
   );
 };
