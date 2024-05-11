@@ -9,7 +9,7 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ socials }) => {
   return (
     <div className="flex flex-col items-center justify-center">
       {socials.map((social) => (
-        <SocialLink key={social.key} social={social} />
+        <SocialLink key={social.name} social={social} />
       ))}
     </div>
   );

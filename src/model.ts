@@ -23,7 +23,6 @@ export interface ToolBadge {
 }
 
 export interface Social {
-  key: number;
   name: string;
   url: string;
   icon: string;
@@ -115,31 +114,26 @@ export const getModel = (): Model => {
     },
     socials: [
       {
-        key: 0,
         name: "Discord",
         url: "https://discord.com/users/299862332530753537",
         icon: "discord",
       },
       {
-        key: 1,
         name: "Signal",
         url: "https://signal.me/#eu/qlIwDnZTYz4n9SGmwLBf0p80p37Lz_nkkHZmYTDEEtnJtv8lW89M_IzzU567afal",
         icon: "signal",
       },
       {
-        key: 2,
         name: "GitHub",
         url: "https://github.com/AstralJaeger",
         icon: "github",
       },
       {
-        key: 3,
         name: "GitLab",
         url: "https://gitlab.com/AstralJaeger",
         icon: "gitlab",
       },
       {
-        key: 4,
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/felix-hillebrand-4a194a215/",
         icon: "linkedin",
