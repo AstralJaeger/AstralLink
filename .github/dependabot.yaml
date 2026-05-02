@@ -1,0 +1,37 @@
+version: 2
+
+updates:
+  # Maintain dependencies for npm
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+    assignees:
+      - 'AstralJaeger'
+    commit-message:
+      prefix: 'npm'
+    open-pull-requests-limit: 5
+    versioning-strategy: increase-if-necessary
+    cooldown:
+      default-days: 7
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
+
+  # Maintain dependencies for github actions
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+    assignees:
+      - 'AstralJaeger'
+    commit-message:
+      prefix: 'actions'
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 7
+    groups:
+      production-dependencies:
+        dependency-type: "production"
