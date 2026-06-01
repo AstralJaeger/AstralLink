@@ -1,3 +1,10 @@
+// -----------------------------------------------------------------------------
+// Data model
+// -----------------------------------------------------------------------------
+// These interfaces describe the shape of the site configuration and content.
+// You normally don't need to edit this file — edit `src/site.config.ts` instead.
+// -----------------------------------------------------------------------------
+
 export interface Model {
   badge: Badge;
   bio: Bio;
@@ -33,111 +40,52 @@ export enum BadgeState {
   QR_CODE,
 }
 
+/**
+ * Color theme for an instance. Every value is a CSS color string (hex, rgb,
+ * hsl, ...). These are applied at runtime as CSS variables, so changing them
+ * recolors the whole site. See `applyTheme` in `src/theme.ts`.
+ */
+export interface Theme {
+  /** Background of panels / cards (default: dark slate). */
+  surface: string;
+  /** Accent color used for gradients, highlights and hovers. */
+  accent: string;
+  /** Primary text color. */
+  text: string;
+  /** Secondary / muted text color (e.g. the footer). */
+  textMuted: string;
+}
+
+/** Page metadata used for the browser tab title and description. */
+export interface Meta {
+  /** Browser tab title. */
+  title: string;
+  /** Short description of the site. */
+  description: string;
+}
+
+/** Footer configuration. */
+export interface FooterConfig {
+  /** Name shown in the copyright line. */
+  name: string;
+  /** Year shown in the copyright line. */
+  year: number;
+  /** URL the copyright name links to. */
+  url: string;
+  /** "Source code" link target shown on the right of the footer. */
+  repoUrl: string;
+}
+
+/** The complete configuration for a single instance of this template. */
+export interface SiteConfig {
+  meta: Meta;
+  theme: Theme;
+  footer: FooterConfig;
+  content: Model;
+}
+
+import { siteConfig } from "./site.config.ts";
+
 export const getModel = (): Model => {
-  return {
-    badge: {
-      image: "/phoenix.svg",
-      qrCodeImage: "/qrcode.svg",
-    },
-    bio: {
-      name: "Felix Hillebrand",
-      tag: "@AstralJaeger",
-      bio: "DevOps specialist and chaotic evil software developer by passion",
-      languages: [
-        {
-          icon: "rust",
-          url: "https://www.rust-lang.org/",
-        },
-        {
-          icon: "go",
-          url: "https://go.dev/",
-        },
-        {
-          icon: "java",
-          url: "https://dev.java/",
-        },
-        {
-          icon: "ts",
-          url: "https://www.typescriptlang.org/",
-        },
-        {
-          icon: "nodejs",
-          url: "https://nodejs.org/en",
-        },
-        {
-          icon: "python",
-          url: "https://www.python.org/",
-        },
-      ],
-      tools: [
-        {
-          icon: "docker",
-          url: "https://www.docker.com/",
-        },
-        {
-          icon: "kubernetes",
-          url: "https://kubernetes.io/",
-        },
-        {
-          icon: "openshift",
-          url: "https://www.redhat.com/de/technologies/cloud-computing/openshift",
-        },
-        {
-          icon: "prometheus",
-          url: "https://prometheus.io/",
-        },
-        {
-          icon: "rabbitmq",
-          url: "https://www.rabbitmq.com/",
-        },
-        {
-          icon: "bash",
-          url: "https://www.gnu.org/software/bash/",
-        },
-        {
-          icon: "powershell",
-          url: "https://learn.microsoft.com/en-us/powershell/",
-        },
-        {
-          icon: "aws",
-          url: "https://aws.amazon.com/",
-        },
-        {
-          icon: "azure",
-          url: "https://azure.microsoft.com/de-de",
-        },
-        {
-          icon: "firebase",
-          url: "https://firebase.google.com/",
-        },
-      ],
-    },
-    socials: [
-      {
-        name: "Discord",
-        url: "https://discord.com/users/299862332530753537",
-        icon: "discord",
-      },
-      {
-        name: "Signal",
-        url: "https://signal.me/#eu/qlIwDnZTYz4n9SGmwLBf0p80p37Lz_nkkHZmYTDEEtnJtv8lW89M_IzzU567afal",
-        icon: "signal",
-      },
-      {
-        name: "GitHub",
-        url: "https://github.com/AstralJaeger",
-        icon: "github",
-      },
-      {
-        name: "GitLab",
-        url: "https://gitlab.com/AstralJaeger",
-        icon: "gitlab",
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/felix-hillebrand-4a194a215/",
-        icon: "linkedin",
-      },
-    ],
-  };
+  return siteConfig.content;
 };

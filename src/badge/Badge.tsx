@@ -11,7 +11,7 @@ type BadgeProps = {
 
 const Badge: React.FC<BadgeProps> = ({ badge, bio }) => {
   return (
-    <header className="m-4 flex flex-col items-center justify-center text-gray-300">
+    <header className="m-4 flex flex-col items-center justify-center text-fg">
       <Portrait badge={badge} />
       <h1 className="m-2 ml-8 mr-8 flex-1 text-center text-3xl font-bold">
         {bio.name}

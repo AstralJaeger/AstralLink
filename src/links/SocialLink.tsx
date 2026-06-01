@@ -8,34 +8,75 @@ import {
   faGithub,
   faGitlab,
   faLinkedin,
+  faInstagram,
+  faTiktok,
+  faYoutube,
+  faTwitch,
+  faPatreon,
+  faXTwitter,
+  faMastodon,
+  faBluesky,
+  faFacebook,
+  faThreads,
+  faReddit,
+  faPinterest,
+  faSpotify,
+  faSoundcloud,
+  faTumblr,
+  faTelegram,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUser,
+  faEnvelope,
+  faGlobe,
+  faMugHot,
+} from "@fortawesome/free-solid-svg-icons";
 
 type SocialLinkProps = {
   social: Social;
 };
 
+// Maps a `social.icon` slug (set in src/site.config.ts) to a brand icon.
+// Add new entries here if you need a platform that isn't listed yet.
+const iconMap: Record<string, typeof faUser> = {
+  discord: faDiscord,
+  signal: faSignalMessenger,
+  github: faGithub,
+  gitlab: faGitlab,
+  linkedin: faLinkedin,
+  instagram: faInstagram,
+  tiktok: faTiktok,
+  youtube: faYoutube,
+  twitch: faTwitch,
+  patreon: faPatreon,
+  "ko-fi": faMugHot,
+  kofi: faMugHot,
+  x: faXTwitter,
+  twitter: faXTwitter,
+  mastodon: faMastodon,
+  bluesky: faBluesky,
+  facebook: faFacebook,
+  threads: faThreads,
+  reddit: faReddit,
+  pinterest: faPinterest,
+  spotify: faSpotify,
+  soundcloud: faSoundcloud,
+  tumblr: faTumblr,
+  telegram: faTelegram,
+  whatsapp: faWhatsapp,
+  email: faEnvelope,
+  website: faGlobe,
+};
+
 const getIcon = (iconName: string) => {
-  switch (iconName) {
-    case "discord":
-      return faDiscord;
-    case "signal":
-      return faSignalMessenger;
-    case "github":
-      return faGithub;
-    case "gitlab":
-      return faGitlab;
-    case "linkedin":
-      return faLinkedin;
-    default:
-      return faUser;
-  }
+  return iconMap[iconName] ?? faUser;
 };
 
 const SocialLink: React.FC<SocialLinkProps> = ({ social }) => {
   return (
-    <div className="m-2 w-full rounded-lg bg-gradient-to-tl from-gray-700 to-orange-500 p-px shadow hover:bg-gradient-to-br">
-      <div className="rounded-lg bg-gray-700 p-3 text-gray-300 hover:text-orange-500">
+    <div className="m-2 w-full rounded-lg bg-gradient-to-tl from-surface to-accent p-px shadow hover:bg-gradient-to-br">
+      <div className="rounded-lg bg-surface p-3 text-fg hover:text-accent">
         <a href={social.url} className="text-xl">
           <div className="flex w-full items-center justify-center">
             <FontAwesomeIcon

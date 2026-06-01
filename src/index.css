@@ -1,13 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/*html {
-  @apply h-full
-}*/
+/*
+ * Theme tokens.
+ *
+ * These are the DEFAULT colors for the template. They are exposed as CSS
+ * variables on :root and as Tailwind color utilities (e.g. `bg-surface`,
+ * `text-accent`, `from-surface`, `to-accent`).
+ *
+ * You normally DON'T need to edit them here: the values are overridden at
+ * runtime from `src/site.config.ts` (see `applyTheme`), so recoloring an
+ * instance only requires editing that single config file.
+ */
+@theme {
+  --color-surface: #374151; /* panels / cards background */
+  --color-accent: #f99c1c; /* highlights, gradients, hovers */
+  --color-fg: #d1d5db; /* primary text */
+  --color-muted: #e5e7eb; /* secondary / footer text */
+}
 
 body {
-  @apply min-h-screen bg-gradient-to-br from-gray-700 to-orange-500 bg-cover;
+  @apply min-h-screen bg-cover bg-gradient-to-br from-surface to-accent;
   width: 800px;
   max-width: calc(100% - 2rem);
   margin-inline: auto;
