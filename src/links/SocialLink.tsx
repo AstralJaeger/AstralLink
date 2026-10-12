@@ -34,14 +34,14 @@ const getIcon = (iconName: string) => {
 
 const SocialLink: React.FC<SocialLinkProps> = ({ social }) => {
   return (
-    <div className="m-2 w-full rounded-lg bg-gradient-to-tl from-gray-700 to-orange-500 p-px shadow hover:bg-gradient-to-br">
+    <div className="m-2 w-full rounded-lg bg-linear-to-tl from-gray-700 to-orange-500 p-px shadow-sm hover:bg-linear-to-br">
       <div className="rounded-lg bg-gray-700 p-3 text-gray-300 hover:text-orange-500">
         <a href={social.url} className="text-xl">
           <div className="flex w-full items-center justify-center">
             <FontAwesomeIcon
               icon={getIcon(social.icon)}
               size="lg"
-              className="ml-2 mr-2"
+              className="mr-2 ml-2"
             />
             <h2>{social.name}</h2>
           </div>

@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# cloudflare
+.wrangler/
+.dev.vars
+.pnpm-store/

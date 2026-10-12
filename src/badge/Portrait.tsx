@@ -1,4 +1,3 @@
-import "./Portrait.css";
 import { Badge, BadgeState } from "../model.ts";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
@@ -26,10 +25,10 @@ const Portrait: React.FC<PortraitProps> = ({ badge }) => {
   return (
     <div
       onClick={() => setState(toggleState(state))}
-      className="gradient-bordered flex w-full items-center justify-center"
+      className="flex w-full items-center justify-center"
     >
       {state === BadgeState.PICTURE ? (
-        <div className="flex flex-col items-center justify-center rounded-full bg-gradient-to-tl from-gray-700 to-orange-500">
+        <div className="flex flex-col items-center justify-center rounded-full bg-linear-to-tl from-gray-700 to-orange-500">
           <div className="m-0.5 rounded-full bg-gray-700">
             <img
               className="m-2 h-64 w-64 content-center rounded-full p-2"

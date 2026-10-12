@@ -1,13 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/*html {
-  @apply h-full
-}*/
+@theme {
+  --color-orange-500: #f99c1c;
+}
 
 body {
-  @apply min-h-screen bg-gradient-to-br from-gray-700 to-orange-500 bg-cover;
+  @apply min-h-screen bg-linear-to-br from-gray-700 to-orange-500 bg-cover;
   width: 800px;
   max-width: calc(100% - 2rem);
   margin-inline: auto;

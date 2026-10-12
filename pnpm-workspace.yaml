@@ -1,0 +1,4 @@
+allowBuilds:
+  # native binaries pulled in by wrangler
+  esbuild: true
+  workerd: true

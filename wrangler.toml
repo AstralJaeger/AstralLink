@@ -1,0 +1,11 @@
+# Cloudflare Worker serving the static Vite build (Workers static assets).
+name = "ajx-link"
+compatibility_date = "2026-10-01"
+
+# Production is served on the custom domain; branch previews use *.workers.dev preview URLs.
+workers_dev = true
+preview_urls = true
+routes = [{ pattern = "astraljaeger.dev", custom_domain = true }]
+
+[assets]
+directory = "./dist"
