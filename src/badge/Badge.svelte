@@ -24,6 +24,8 @@
 					<a href={skill.url} target="_blank" rel="noopener noreferrer">
 						<img
 							class="max-h-16 max-w-16"
+							width="48"
+							height="48"
 							src="https://skillicons.dev/icons?i={skill.icon}&theme=dark"
 							alt={skill.icon}
 							title={skill.icon}

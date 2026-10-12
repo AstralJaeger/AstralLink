@@ -19,7 +19,13 @@
 	};
 </script>
 
-<button type="button" onclick={toggle} class="flex w-full cursor-pointer items-center justify-center">
+<button
+	type="button"
+	onclick={toggle}
+	aria-label={showQr ? 'Show portrait' : 'Show QR code'}
+	aria-pressed={showQr}
+	class="flex w-full cursor-pointer items-center justify-center"
+>
 	{#if !showQr}
 		<div
 			class="flex flex-col items-center justify-center rounded-full bg-linear-to-tl from-gray-700 to-orange-500"

@@ -6,5 +6,7 @@
 </script>
 
 <Badge badge={profile.badge} bio={profile.bio} />
-<SocialLinks socials={profile.socials} />
+<main>
+	<SocialLinks socials={profile.socials} />
+</main>
 <Footer />
