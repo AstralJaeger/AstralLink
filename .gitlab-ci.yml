@@ -3,8 +3,8 @@
 #   - any other branch -> preview version with alias URL (<branch>-ajx-link.<subdomain>.workers.dev)
 # Needs CLOUDFLARE_ACCOUNT_ID (group ajxhome/web) and CLOUDFLARE_API_TOKEN (this project).
 include:
-  - component: $CI_SERVER_FQDN/ajxhome/platform/cloudflare/webapp@0.2.0
+  - component: $CI_SERVER_FQDN/ajxhome/platform/cloudflare/webapp@0.3.0
     inputs:
       production_url: https://astraljaeger.dev
-      image: registry.gitlab.com/ajxhome/platform/cloudflare/node-web:0.2
+      image: registry.gitlab.com/ajxhome/platform/cloudflare/node-web:0.3
       lint_command: pnpm lint
