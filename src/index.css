@@ -1,17 +1,17 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-orange-500: #f99c1c;
+	--color-orange-500: #f99c1c;
 }
 
 body {
-  @apply min-h-screen bg-linear-to-br from-gray-700 to-orange-500 bg-cover;
-  width: 800px;
-  max-width: calc(100% - 2rem);
-  margin-inline: auto;
+	@apply min-h-screen bg-linear-to-br from-gray-700 to-orange-500 bg-cover;
+	width: 800px;
+	max-width: calc(100% - 2rem);
+	margin-inline: auto;
 }
 
 #root {
-  min-height: 100vh;
-  @apply flex flex-col;
+	min-height: 100vh;
+	@apply flex flex-col;
 }

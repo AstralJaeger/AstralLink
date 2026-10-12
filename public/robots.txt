@@ -1,2 +1,5 @@
+# Deliberately blocking all crawlers: this page carries personal contact details and
+# is only meant for people who were given the link. The content is client-rendered and
+# obfuscated in the bundle, so a scraper also has to execute the page to see anything.
 User-Agent: *
 Disallow: /
