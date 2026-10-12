@@ -1,8 +1,8 @@
 /// <reference types="svelte" />
 /// <reference types="vite/client" />
 
-// Profile JSON imported with `?encoded` is obfuscated at build time (build/encode-profile.ts).
-declare module '*.json?encoded' {
+// Obfuscated at build time by build/encode-profile.ts.
+declare module 'virtual:profile' {
 	const value: import('./model').Model;
 	export default value;
 }

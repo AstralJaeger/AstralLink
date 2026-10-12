@@ -4,9 +4,9 @@
 		"qrCodeImage": "/qrcode.svg"
 	},
 	"bio": {
-		"name": "Felix Hillebrand",
-		"tag": "@AstralJaeger",
-		"bio": "DevOps specialist and chaotic evil software developer by passion",
+		"name": "Jane Doe",
+		"tag": "@example",
+		"bio": "Placeholder profile for local development",
 		"languages": [
 			{
 				"icon": "rust",
@@ -78,28 +78,13 @@
 	},
 	"socials": [
 		{
-			"name": "Discord",
-			"url": "https://discord.com/users/299862332530753537",
-			"icon": "discord"
-		},
-		{
-			"name": "Signal",
-			"url": "https://signal.me/#eu/qlIwDnZTYz4n9SGmwLBf0p80p37Lz_nkkHZmYTDEEtnJtv8lW89M_IzzU567afal",
-			"icon": "signal"
-		},
-		{
 			"name": "GitHub",
-			"url": "https://github.com/AstralJaeger",
+			"url": "https://github.com/example",
 			"icon": "github"
 		},
 		{
-			"name": "GitLab",
-			"url": "https://gitlab.com/AstralJaeger",
-			"icon": "gitlab"
-		},
-		{
 			"name": "LinkedIn",
-			"url": "https://www.linkedin.com/in/felix-hillebrand-4a194a215/",
+			"url": "https://www.linkedin.com/in/example",
 			"icon": "linkedin"
 		}
 	]

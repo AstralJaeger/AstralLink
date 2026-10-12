@@ -2,7 +2,7 @@
 	import Badge from './badge/Badge.svelte';
 	import SocialLinks from './links/SocialLinks.svelte';
 	import Footer from './Footer.svelte';
-	import profile from './profile.json?encoded';
+	import profile from 'virtual:profile';
 </script>
 
 <Badge badge={profile.badge} bio={profile.bio} />
