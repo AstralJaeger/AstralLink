@@ -2,6 +2,8 @@
 
 Personal landing page / link tree at **https://astraljaeger.dev**.
 
+Developed on [GitLab](https://gitlab.com/ajxhome/link); [GitHub](https://github.com/AstralJaeger/AstralLink) is a read-only push mirror of `main`, so issues and merge requests go to GitLab.
+
 Stack: [React 19](https://react.dev) · [Vite](https://vite.dev) · [Tailwind v4](https://tailwindcss.com) · Cloudflare Workers (static assets).
 
 ## Develop
