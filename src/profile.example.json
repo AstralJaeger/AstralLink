@@ -1,0 +1,91 @@
+{
+	"badge": {
+		"image": "/phoenix.svg",
+		"qrCodeImage": "/qrcode.svg"
+	},
+	"bio": {
+		"name": "Jane Doe",
+		"tag": "@example",
+		"bio": "Placeholder profile for local development",
+		"languages": [
+			{
+				"icon": "rust",
+				"url": "https://www.rust-lang.org/"
+			},
+			{
+				"icon": "go",
+				"url": "https://go.dev/"
+			},
+			{
+				"icon": "java",
+				"url": "https://dev.java/"
+			},
+			{
+				"icon": "ts",
+				"url": "https://www.typescriptlang.org/"
+			},
+			{
+				"icon": "nodejs",
+				"url": "https://nodejs.org/en"
+			},
+			{
+				"icon": "python",
+				"url": "https://www.python.org/"
+			}
+		],
+		"tools": [
+			{
+				"icon": "docker",
+				"url": "https://www.docker.com/"
+			},
+			{
+				"icon": "kubernetes",
+				"url": "https://kubernetes.io/"
+			},
+			{
+				"icon": "openshift",
+				"url": "https://www.redhat.com/de/technologies/cloud-computing/openshift"
+			},
+			{
+				"icon": "prometheus",
+				"url": "https://prometheus.io/"
+			},
+			{
+				"icon": "rabbitmq",
+				"url": "https://www.rabbitmq.com/"
+			},
+			{
+				"icon": "bash",
+				"url": "https://www.gnu.org/software/bash/"
+			},
+			{
+				"icon": "powershell",
+				"url": "https://learn.microsoft.com/en-us/powershell/"
+			},
+			{
+				"icon": "aws",
+				"url": "https://aws.amazon.com/"
+			},
+			{
+				"icon": "azure",
+				"url": "https://azure.microsoft.com/de-de"
+			},
+			{
+				"icon": "firebase",
+				"url": "https://firebase.google.com/"
+			}
+		]
+	},
+	"socials": [
+		{
+			"name": "GitHub",
+			"url": "https://github.com/example",
+			"icon": "github"
+		},
+		{
+			"name": "LinkedIn",
+			"url": "https://www.linkedin.com/in/example",
+			"icon": "linkedin"
+		}
+	]
+}

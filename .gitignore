@@ -28,3 +28,6 @@ dist-ssr
 .dev.vars
 .pnpm-store/
 *.tsbuildinfo
+
+# personal data, provided via PROFILE_JSON in CI (see README)
+src/profile.json
