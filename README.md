@@ -4,9 +4,12 @@ Personal landing page / link tree at **https://astraljaeger.dev**.
 
 This repository is a read-only mirror of `main`.
 
-Stack: [Svelte 5](https://svelte.dev) · [Vite](https://vite.dev) · [Tailwind v4](https://tailwindcss.com) · Cloudflare Workers (static assets).
+Stack: [Svelte 5](https://svelte.dev) · [Vite](https://vite.dev) · [Tailwind v4](https://tailwindcss.com) · the AstralJaeger design system (`@ajxhome/design-system`) · Cloudflare Workers (static assets).
 
 ## Develop
+
+`@ajxhome/design-system` comes from a private GitLab npm registry (see `.npmrc`); authenticate once with a personal
+access token (`read_api`) before installing.
 
 ```sh
 pnpm install
@@ -25,7 +28,7 @@ The profile (name, bio, skill icons, social links) is personal data and is not c
 2. `src/profile.json` (gitignored, for local development)
 3. `src/profile.example.json` (committed placeholder; shows the format, types in `src/model.ts`)
 
-Skill icons come from [skillicons.dev](https://skillicons.dev) by id; social icons are mapped to Font Awesome in `src/links/SocialLink.svelte`.
+Skills are listed by their [skillicons.dev](https://skillicons.dev)-style id and shown as text chips; social `icon` names are the design system's icons (`discord`, `signal`, `github`, `gitlab`, `linkedin`); `src/profile.ts` maps the JSON onto its components.
 
 ### Why it is client-rendered and obfuscated
 

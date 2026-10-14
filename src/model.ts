@@ -25,5 +25,10 @@ export interface ToolBadge {
 export interface Social {
 	name: string;
 	url: string;
+	/** Design system icon name (discord, signal, github, gitlab, linkedin); anything else shows a link icon. */
 	icon: string;
+	/** Optional second line under the name. */
+	description?: string;
+	/** Highlights the link; one per page at most. */
+	featured?: boolean;
 }
