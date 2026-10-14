@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ajxhome/design-system':
-        specifier: ^0.2.0
-        version: 0.2.0(@internationalized/date@3.12.4)(svelte@5.57.2(@typescript-eslint/types@8.71.1))(tailwindcss@4.3.3)
+        specifier: ^0.3.0
+        version: 0.3.0(@internationalized/date@3.12.4)(svelte@5.57.2(@typescript-eslint/types@8.71.1))(tailwindcss@4.3.3)
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -66,8 +66,8 @@ importers:
 
 packages:
 
-  '@ajxhome/design-system@0.2.0':
-    resolution: {integrity: sha512-Pt9vqQFwE6lP+5LtI3z//nNPbw7jLtFpc61KzZR0LWr/zwGzRUvmCnOSHHqHJ+9EFuvulPu4EGbUqFQCaZsquQ==, tarball: https://gitlab.com/api/v4/projects/87588215/packages/npm/@ajxhome/design-system/-/@ajxhome/design-system-0.2.0.tgz}
+  '@ajxhome/design-system@0.3.0':
+    resolution: {integrity: sha512-xxOa3qMEszrAcK62GwlFfVdLhT1RrXN1c7FnC1gCtxBes7DcEuFX0kjQHNthUWoirk5iDCc58rhSkyUgGRwcRw==, tarball: https://gitlab.com/api/v4/projects/87588215/packages/npm/@ajxhome/design-system/-/@ajxhome/design-system-0.3.0.tgz}
     engines: {node: '>=24'}
     peerDependencies:
       svelte: ^5.33.0
@@ -1679,7 +1679,7 @@ packages:
 
 snapshots:
 
-  '@ajxhome/design-system@0.2.0(@internationalized/date@3.12.4)(svelte@5.57.2(@typescript-eslint/types@8.71.1))(tailwindcss@4.3.3)':
+  '@ajxhome/design-system@0.3.0(@internationalized/date@3.12.4)(svelte@5.57.2(@typescript-eslint/types@8.71.1))(tailwindcss@4.3.3)':
     dependencies:
       '@fontsource-variable/geist': 5.3.0
       '@fontsource-variable/geist-mono': 5.3.0
