@@ -36,6 +36,6 @@
 	},
 	"packageManager": "pnpm@11.20.0",
 	"dependencies": {
-		"@ajxhome/design-system": "^0.2.0"
+		"@ajxhome/design-system": "^0.3.0"
 	}
 }

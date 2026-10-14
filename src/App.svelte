@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Footer, LinkList, Page, Profile, SkillChips } from '@ajxhome/design-system';
+	import { FabricBackdrop, Footer, LinkList, Page, Profile, SkillChips } from '@ajxhome/design-system';
 	import profile from 'virtual:profile';
 	import QrCode from './QrCode.svelte';
 	import { toChips, toLinks } from './profile';
@@ -20,7 +20,8 @@
 	});
 </script>
 
-<Page variant="link">
+<FabricBackdrop />
+<Page variant="link" panel>
 	<div bind:this={profileRoot} class="contents">
 		<Profile name={bio.name} handle={bio.tag} bio={bio.bio} avatarSrc={badge.image}>
 			<QrCode src={badge.qrCodeImage} open={showQr} />
