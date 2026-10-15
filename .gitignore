@@ -31,3 +31,6 @@ dist-ssr
 
 # personal data, provided via PROFILE_JSON in CI (see README)
 src/profile.json
+
+# CodeGraph index (local)
+.codegraph/
